@@ -14,6 +14,7 @@ Ex:
 
 void Ex3(int in_arr[], int n){
 	//Your codes here
+
     int i;
     int in_count = 1, de_count = 1;
     int head = 0, tail = 0, in_head = 0, in_tail = 0, de_head = 0, de_tail = 0;
@@ -30,9 +31,9 @@ void Ex3(int in_arr[], int n){
             tail = head;
         }
     }
-    head = 0 tail = 0;
+    head = 0; tail = 0;
     for(i = 0; i < n - 1; i++){
-        if(de_arr[i] >= de_arr[i + 1]){
+        if(in_arr[i] >= in_arr[i + 1]){
             tail = i + 1;
         } else {
             if(tail - head + 1 > de_count) {

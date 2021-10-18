@@ -27,10 +27,10 @@ void Ex5(int arr[], int n){
 			countNe++;
 		}
 	}
-	for(int k=0;k<=countPo;k++) {
+	for(int k=0;k<=countPo-1;k++) {
 		printf(" %d",arrPo[k]);
 	}
-	for(int k=0;k<=countNe;k++) {
+	for(int k=0;k<=countNe-1;k++) {
 		printf(" %d",arrNe[k]);
 	}
 	

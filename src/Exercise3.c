@@ -14,10 +14,6 @@ Ex:
 
 void Ex3(int in_arr[], int n){
 	//Your codes here
-	if(n == 1){
-        printf("Increasing %d\nDecreasing %d", in_arr[0], in_arr[0]);
-        return;
-    }
     int i;
     int in_count = 1, de_count = 1;
     int head = 0, tail = 0, in_head = 0, in_tail = 0, de_head = 0, de_tail = 0;

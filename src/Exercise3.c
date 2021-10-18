@@ -32,7 +32,7 @@ void Ex3(int in_arr[], int n){
     }
     head = 0; tail = 0;
     for(i = 0; i < n - 1; i++){
-        if(in_arr[i] >= in_arr[i + 1]){
+        if(de_arr[i] >= de_arr[i + 1]){
             tail = i + 1;
         } else {
             if(tail - head + 1 > de_count) {

@@ -27,7 +27,7 @@ void Ex3(int in_arr[], int n){
                 in_head = head;
                 in_tail = tail;
             }
-            head = tail + 1;
+            head = tail;
             tail = head;
         }
     }
@@ -41,7 +41,7 @@ void Ex3(int in_arr[], int n){
                 de_head = head;
                 de_tail = tail;
             }
-            head = tail + 1;
+            head = tail;
             tail = head;
         }
     }

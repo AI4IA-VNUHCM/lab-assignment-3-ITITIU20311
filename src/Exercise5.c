@@ -18,7 +18,7 @@ void Ex5(int arr[], int n){
 	countNe=0;
 	for(int i=0 ; i<=n-1;i++)
 	{
-		if(arr[i]>=o)
+		if(arr[i]>=0)
 		{arrPo[countPo]=arr[i];
 		countPo++;}
 		else

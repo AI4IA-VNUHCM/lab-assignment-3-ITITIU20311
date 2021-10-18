@@ -14,20 +14,23 @@ ______________________________________
 
 int Ex4(int arr[], int n){
 	//Your codes here
-	int count;
+	int count1,count2;
 	count=0;
 	for (int i = 1; i < n; i++)
 	{
 		if (arr[i]>=arr[i-1])
-		count = count +1;
-		}
-	if (count==0)
+		count1 = count1 +1;
+		if (arr[i]<=arr[i-1])
+		count2 = count2 +1;
+
+	}
+	if (count1==0)
 	{
 		return -1;
 	}
 	else
 	{
-		if(count==n-1)
+		if(count2==0)
 		return 1;
 		else
 		return 0;

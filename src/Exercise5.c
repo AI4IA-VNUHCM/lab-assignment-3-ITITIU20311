@@ -13,6 +13,26 @@ ______________________________________
 
 void Ex5(int arr[], int n){
 	//Your codes here
+	int arrPo[n],arrNe[n],countPo,countNe;
+	countPo=0;
+	countNe=0;
+	for(int i=0 ; i<=n-1;i++)
+	{
+		if(arr[i]>=0)
+		{arrPo[countPo]=arr[i];
+		countPo++;}
+		else
+		{
+			arrNe[countNe]=arr[i];
+			countNe++;
+		}
+	}
+	for(int k=0;k<=countPo-1;k++) {
+		printf(" %d",arrPo[k]);
+	}
+	for(int k=0;k<=countNe-1;k++) {
+		printf(" %d",arrNe[k]);
+	}
 	
 }
 

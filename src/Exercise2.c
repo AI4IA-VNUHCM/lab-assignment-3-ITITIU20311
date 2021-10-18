@@ -14,7 +14,51 @@ Ex:
 
 void Ex2(int arr[], int n){
 	//Your codes here
+	int doicho;
+	for (int i = 0; i <=n-2; i++)
+	{
+		if (arr[i]%2==0)
+		{
+			for (int j = i+1; j <=n-1; j++)
+			{
+				if(arr[j]%2==0)
+				{
+					if(arr[j]>=arr[i])
+					{	
+						doicho=arr[j];
+						arr[j]=arr[i];
+						arr[i]=doicho;
+					}
+				}
+			}
+			
+		}
+		
+	}
+	for (int i = 0; i <=n-2; i++)
+	{
+		if (arr[i]%2==1)
+		{
+			for (int j = i+1; j <=n-1; j++)
+			{
+				if(arr[j]%2==1)
+				{
+					if(arr[j]<=arr[i])
+					{	
+						doicho=arr[j];
+						arr[j]=arr[i];
+						arr[i]=doicho;
+					}
+				}
+			}
+			
+		}
+		
+	}
 	
+	for(int k=0;k<=n-1;k++) {
+		printf(" %d",arr[k]);
+	}
 }
 
 int main(int argc, char *argv[]) {

@@ -14,7 +14,24 @@ ______________________________________
 
 int Ex4(int arr[], int n){
 	//Your codes here
-	
+	int count;
+	count=0;
+	for (int i = 1; i < n; i++)
+	{
+		if (arr[i]>=arr[i-1])
+		count = count +1;
+		}
+	if (count==0)
+	{
+		return -1;
+	}
+	else
+	{
+		if(count==n-1)
+		return 1;
+		else
+		return 0;
+	}
 }
 
 int main(int argc, char *argv[]) {

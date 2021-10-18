@@ -25,17 +25,9 @@ int Ex4(int arr[], int n){
 		count2 = count2 +1;
 
 	}
-	if (count1==0)
-	{
-		return -1;
-	}
-	else
-	{
-		if(count2==0)
-		return 1;
-		else
-		return 0;
-	}
+	if (count1==0) return -1;
+	else{	if(count2==0) return 1;
+			else return 0;}
 }
 
 int main(int argc, char *argv[]) {

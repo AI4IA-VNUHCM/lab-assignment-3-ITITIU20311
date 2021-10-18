@@ -15,7 +15,8 @@ ______________________________________
 int Ex4(int arr[], int n){
 	//Your codes here
 	int count1,count2;
-	count=0;
+	count1=0;
+	count2=0;
 	for (int i = 1; i < n; i++)
 	{
 		if (arr[i]>=arr[i-1])

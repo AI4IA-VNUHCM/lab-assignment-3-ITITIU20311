@@ -15,14 +15,14 @@ Ex:
 void Ex3(int in_arr[], int n){
 	//Your codes here
 	if(n == 1){
-        printf("Increasing %d\nDecreasing %d", arr[0], arr[0]);
+        printf("Increasing %d\nDecreasing %d", in_arr[0], in_arr[0]);
         return;
     }
     int i;
     int in_count = 1, de_count = 1;
     int head = 0, tail = 0, in_head = 0, in_tail = 0, de_head = 0, de_tail = 0;
     for(i = 0; i < n - 1; i++){
-        if(arr[i] <= arr[i + 1]){
+        if(in_arr[i] <= in_arr[i + 1]){
             tail = i + 1;
         } else {
             if(tail - head + 1 > in_count) {
@@ -36,7 +36,7 @@ void Ex3(int in_arr[], int n){
     }
     head = 0, tail = 0;
     for(i = 0; i < n - 1; i++){
-        if(arr[i] >= arr[i + 1]){
+        if(in_arr[i] >= in_arr[i + 1]){
             tail = i + 1;
         } else {
             if(tail - head + 1 > de_count) {
@@ -50,10 +50,10 @@ void Ex3(int in_arr[], int n){
     }
     printf("Increasing ");
     for(i = in_head; i <= in_tail; i++)
-        printf("%d ", arr[i]);
+        printf("%d ", in_arr[i]);
     printf("Decreasing ");
     for(i = de_head; i <= de_tail; i++)
-        printf("%d ", arr[i]);
+        printf("%d ", in_arr[i]);
 	
 }
 

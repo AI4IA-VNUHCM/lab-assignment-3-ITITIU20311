@@ -14,7 +14,20 @@ Ex:
 
 void Ex1(int arr[], int n){
 	//Your codes here
-    
+	int count;
+	count = 0;
+    for (int i=0; i <= n-1; i++)
+    {
+        if(arr[i]!=arr[n-i-1])
+        {
+            count = count + 1 ;
+        }
+        
+    } 
+    if (count==0)
+        printf("symmetric");
+    else 
+        printf("no");
 }
 
 int main(int argc, char *argv[]) {

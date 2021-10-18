@@ -14,6 +14,9 @@ Ex:
 
 void Ex3(int in_arr[], int n){
 	//Your codes here
+	for(int k=0;k<=n-1;k++) {
+		printf(" %d",in_arr[k]);
+	}
     int i;
     int in_count = 1, de_count = 1;
     int head = 0, tail = 0, in_head = 0, in_tail = 0, de_head = 0, de_tail = 0;
